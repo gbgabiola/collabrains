@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Core Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #41ccb4;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background-color: #41ccb4;
+  color: #333;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #41ccb4;
+  color: #333;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #289683;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #444;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar .logo img {
+  width: 20px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background-color: #41ccb4;
+  color: #333;
+  border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333
+    url('https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1641&q=80')
+    no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 65px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Section: News */
+#news {
+  display: flex;
+}
+
+#news div {
+  flex: 1;
+}
+
+/* Page: About */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+.card {
+  padding: 1rem;
+  background: #fff;
+}
+
+/* Page: About, Section: Feature */
+#feature .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#feature .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#feature .items .item i {
+  background-color: #41ccb4;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Page: About, Section: Team */
+#team .items {
+  display: flex;
+}
+
+#team .items img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+/* Page: Sports, Business, Lifestyle */
+#sports-1,
+#sports-2,
+#business-1,
+#business-2,
+#lifestyle-1,
+#lifestyle-2 {
+  display: flex;
+}
+
+#sports-1 div,
+#sports-2 div,
+#business-1 div,
+#business-2 div,
+#lifestyle-1 div,
+#lifestyle-2 div {
+  flex: 1;
+}
+
+.sports,
+.business,
+.lifestyle {
+  width: 300px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page: Contact */
+.fname,
+.lname,
+.email,
+.subject,
+.message {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Footer */
+#main-footer a {
+  color: #41ccb4;
+}
+
+#main-footer a:hover {
+  color: #289683;
+}
