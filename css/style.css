@@ -261,6 +261,27 @@ p {
   margin-right: auto;
 }
 
+/* Page: Sports, Business, Lifestyle effects and background */
+.sports-p,
+.business-p,
+.lifestyle-p {
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  color: white;
+  background: rgba(37, 187, 190, 0.2);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.sports-p:hover,
+.business-p:hover,
+.lifestyle-p:hover {
+  background-color: rgba(37, 187, 190, 0.5);
+}
+
 /* Page: Contact */
 .fname,
 .lname,
