@@ -147,7 +147,6 @@ p {
 #navbar ul li a {
   color: #fff;
   padding: 0.75rem;
-  /* padding: 20px 0.75rem; */
   margin: 0 0.25rem;
 }
 
@@ -194,8 +193,6 @@ p {
 
 img {
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
   margin: auto;
 
   width: 50%;
@@ -272,15 +269,11 @@ img {
 
 /* Page: Sports, Business, Lifestyle */
 .article-heading {
-  border: 3px solid black;
-  margin-top: 10px;
-  margin-left: 30%;
-  margin-right: 30%;
+  border: 2px solid #333;
+  margin: 3% 30%;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 1.3rem;
   box-shadow: 10px 10px;
-  margin-bottom: 3%;
-  margin-top: 3%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -301,16 +294,17 @@ img {
 #lifestyle-2 div {
   flex: 1;
   margin-bottom: 3%;
+  box-shadow: 3px 3px;
 }
 
 .sports,
 .business,
 .lifestyle {
-  width: 300px;
-  height: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  height: auto;
+  width: 80%;
+  height: 70%;
+  padding: 10% 0;
 }
 
 /* Page: Sports, Business, Lifestyle effects and background */
@@ -319,11 +313,10 @@ img {
 .business-text {
   border: 2px solid whitesmoke;
   border-radius: 15px;
-  color: white;
   background-color: rgba(37, 187, 190, 0.2);
-  margin: 20px 5%;
-  color: black;
-  padding: 50px;
+  color: #333;
+  margin: 20px 2%;
+  padding: 3% 2%;
   transition: transform 0.7s;
 }
 
@@ -362,11 +355,6 @@ img {
   font-size: 15px;
   padding-bottom: 10px;
 }
-
-/* .form-container {
-  margin: auto;
-  width: 100%;
-} */
 
 #contact .btn {
   border-radius: 28px;
